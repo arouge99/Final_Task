@@ -1,6 +1,8 @@
 $bgColor: #24292e;
 $text: #fff;
 
+@import 'src/scss/sidebar_css'
+
 @font-face {
   font-family: 'Comic';
   src: url('../fonts/comic.ttf') format('truetype');
