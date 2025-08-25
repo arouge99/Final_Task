@@ -1,7 +1,6 @@
-$bgColor: #24292e;
-$text: #fff;
-
-@import 'src/scss/sidebar_css'
+@use 'sidebar';
+@use 'repair-brands';
+@use 'cps-services';
 
 @font-face {
   font-family: 'Comic';
@@ -14,6 +13,6 @@ body {
   padding: 1rem;
   margin: 0;
   font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  background-color: white;
+  color: black;
 }

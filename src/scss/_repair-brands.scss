@@ -1,0 +1,166 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f8f8f8;
+}
+
+header h2 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  align-content: center;
+  padding-left: 23px;
+  color: #7e7e82;
+  height: 56px;
+  background: linear-gradient(to right, #f8f8f8,white);
+  margin-bottom: 25px;
+  border-top: 1px solid #41f6d7;
+}
+
+.services {
+  background: #f6f6f6c1;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.brand-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0,0,0,0.03);
+  width: 240px;
+  height: 72px;
+}
+
+.hidden {
+  display: none;
+}
+
+.brand-logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.hide-text {
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 16px;
+font-weight: 500;
+margin-top: 20px;
+cursor: pointer;
+}
+
+.arrow-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(0deg);
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #b5b6bc;
+  opacity: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #41f6d7;
+}
+
+.brand-swiper {
+  padding-bottom: 16px;
+}
+
+/*mobile layout*/
+
+@media (max-width:768px) {
+
+  .hide-text {
+    display: none;
+  }
+  
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .brand-grid{
+    display: none !important
+  }
+
+  .brand-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .brand-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 240px;
+  }
+
+  .swiper-slide {
+    width: 240px !important;
+  }
+
+  .swiper-wrapper {
+    justify-content: space-between;
+  }
+}
+
+/*tablet layout*/
+
+@media (min-width: 769px) and (max-width:1120px) {
+  .hide-on-tablet.hidden {
+    display: none;
+  }
+  
+  .swiper {
+    display: none;
+  }
+}
+/*desktop layout*/
+
+@media (min-width: 1121px) {
+  .hide-on-desktop.hidden {
+    display: none !important;
+  }
+
+  .swiper {
+    display: none;
+  }
+}
