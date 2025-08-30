@@ -27,10 +27,11 @@ header h2 {
 }
 
 .brand-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 gleich breite Spalten */
+    gap: 16px; /* Abstand zwischen den Boxen */
+  }
+  
 
 .brand-card {
   background-color: #fff;
@@ -44,6 +45,19 @@ header h2 {
   width: 240px;
   height: 72px;
 }
+
+.repair-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.03);
+    width: 240px;
+    height: 160px;
+  }
 
 .hidden {
   display: none;
