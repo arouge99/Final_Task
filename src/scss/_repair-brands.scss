@@ -31,6 +31,12 @@ header h2 {
     grid-template-columns: repeat(4, 1fr); /* 4 gleich breite Spalten */
     gap: 16px; /* Abstand zwischen den Boxen */
   }
+
+.repair-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 gleich breite Spalten */
+    gap: 16px; /* Abstand zwischen den Boxen */
+  }  
   
 
 .brand-card {
