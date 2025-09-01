@@ -1,0 +1,33 @@
+.prices__title {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    align-content: center;
+    padding-left: 30px;
+    color: #7e7e82;
+    height: 56px;
+    background: linear-gradient(to right, #f8f8f8,white);
+    margin-bottom: 25px;
+    border-top: 1px solid #41f6d7;
+}
+
+.prices__row {
+    width: 1056px;
+    background-color: white;
+    height: 65px;
+    border: none;
+}
+
+.prices__table {
+    margin-left: 30px;
+}
+
+.prices__note {
+    margin-left: 30px;
+}
+
+.link--offer {
+    margin-left: 30px;
+}

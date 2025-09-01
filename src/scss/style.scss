@@ -1,6 +1,7 @@
 @use 'sidebar';
 @use 'repair-brands';
 @use 'cps-services';
+@use 'prices';
 
 @font-face {
   font-family: 'Comic';
@@ -12,6 +13,9 @@
 body {
   margin: 0;
   font-family: Comic, sans-serif;
-  background-color: white;
   color: black;
+}
+
+footer {
+  margin-left: 30px;
 }
