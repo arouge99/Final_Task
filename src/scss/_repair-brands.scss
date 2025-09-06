@@ -31,32 +31,10 @@ header h2 {
     grid-template-columns: repeat(4, 1fr); /* 4 gleich breite Spalten */
     gap: 16px; /* Abstand zwischen den Boxen */
     margin-left: 30px;
-  }
-
-.repair-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 gleich breite Spalten */
-    gap: 16px; /* Abstand zwischen den Boxen */
-    margin-left: 30px;
   }  
 
   .repair_brands {
     width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.2px;
-    line-height: 24px;
-    text-transform: uppercase;
-    align-content: center;
-    padding-left: 23px;
-    color: #7e7e82;
-    height: 56px;
-    background: linear-gradient(to right, #f8f8f8,white);
-    margin-bottom: 25px;
-    border-top: 1px solid #41f6d7;
-  }
-  
-  .repair_equipment__header {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.2px;
@@ -84,19 +62,6 @@ header h2 {
   height: 72px;
 }
 
-.repair-card {
-    background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 5px rgba(0,0,0,0.03);
-    width: 240px;
-    height: 160px;
-  }
-
 .hidden {
   display: none;
 }
@@ -104,19 +69,6 @@ header h2 {
 .brand-logo {
   font-weight: bold;
   font-size: 18px;
-}
-
-
-.hide-text {
-display: flex;
-align-items: center;
-gap: 8px;
-font-size: 16px;
-font-weight: 500;
-margin-top: 20px;
-cursor: pointer;
-margin-bottom: 10px;
-margin-left: 30px;
 }
 
 .arrow-icon {
@@ -218,3 +170,52 @@ margin-left: 30px;
     display: none;
   }
 }
+
+
+
+.repair_equipment__header {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  align-content: center;
+  padding-left: 23px;
+  color: #7e7e82;
+  height: 56px;
+  background: linear-gradient(to right, #f8f8f8,white);
+  margin-bottom: 25px;
+  border-top: 1px solid #41f6d7;
+}
+
+.repair_equipment__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 gleich breite Spalten */
+  gap: 16px; /* Abstand zwischen den Boxen */
+  margin-left: 30px;
+}  
+
+.repair_equipment__grid-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0,0,0,0.03);
+  width: 240px;
+  height: 160px;
+}
+
+.repair_equipment__hide-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  }

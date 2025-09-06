@@ -1,4 +1,4 @@
-.prices__title {
+.prices__header {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.2px;
@@ -22,12 +22,5 @@
 
 .prices__table {
     margin-left: 30px;
-}
-
-.prices__note {
-    margin-left: 30px;
-}
-
-.link--offer {
-    margin-left: 30px;
+    width: 100%;
 }
