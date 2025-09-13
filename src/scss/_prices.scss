@@ -20,7 +20,40 @@
     border: none;
 }
 
-.prices__table {
-    margin-left: 30px;
+table {
     width: 100%;
+}
+
+.prices__table {
+    padding: 30px;
+}
+
+.prices__button {
+    padding-left: 20px;
+}
+
+.prices__go {
+    padding-left: 20px;
+    background-color: #FF3E79;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 119px;
+    height: 32px;
+}
+
+.prices__go--img {
+    padding-left: 10px;
+}
+
+.prices__note {
+    width: 45%;
+    padding-left: 30px;
+}
+.prices__offer {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
 }

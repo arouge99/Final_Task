@@ -56,39 +56,14 @@
 
       <!--CPS Services-->
 
-      <header class="header">
-        <div class="header__left">
-            <img class="menu__icon hide-on-desktop" src="img/burger.svg" alt="Menu">
-        </div>
+
     
-        <div class="header__divider hide-on-mobile hide-on-desktop"></div>
-    
-        <div class="header__center">
-            <img class="logo__icon hide-on-desktop" src="img/logo.svg" alt="Logo">
-        </div>
-    
-        <div class="header__divider hide-on-desktop hide-on-tablet"></div>
-    
-        <div class="header__right">
-            <img class="profile__call hide-on-mobile hide-on-desktop" src="img/call.svg" alt="Call">
-            <img class="profile__chat hide-on-mobile hide-on-desktop" src="img/chat.svg" alt="Chat">
-            <img class="profile__icon hide-on-mobile hide-on-desktop" src="img/profile.svg" alt="Profile">
-    
-            <div class="header__divider hide-on-mobile hide-on-desktop"></div>
-    
-            <p class="hide-on-mobile hide-on-tablet">Submit a Request</p>
-            <img class="repair__icon" src="img/repair.svg" alt="Repair">
-            <p class="hide-on-mobile hide-on-tablet">Repair Status</p>
-            <img class="status__icon" src="img/checkstatus.svg" alt="Status">
-        </div>
-      </header>
-    
-      <div class="header__right--desktop-only">
+      <header class="header__right--desktop-only">
         <p>Submit a Request</p>
         <img class="repair__icon" src="img/repair.svg" alt="Repair">
         <p>Repair Status</p>
         <img class="status__icon" src="img/checkstatus.svg" alt="Status">
-      </div>
+      </header>
     
       <main class="main">
         <section class="services">
@@ -134,7 +109,7 @@
 
       <section class="services">
         <div class="repair_brands">
-          <h2>Repair of equipment from various brands</h2>
+          <h2 class="repair_brands__header">Repair of equipment from various brands</h2>
         </div>
     
     
@@ -261,10 +236,10 @@
     
         </div>
     
-        <section class="hide-text">
+        <button class="show_more">
           <img src="img/expand.svg" class="arrow-icon" alt="Toggle-icon"> 
           <span>Show More</span>
-        </section>
+        </button>
       </section>
 
       <!--End Repair Brands-->
@@ -297,10 +272,10 @@
 
       </div>
 
-        <div class="repair_equipment__hide-text">
+        <button class="show_more">
           <img class="arrow-icon" src="img/expand.svg" alt="Toggle-icon">
           <span>Show More</span>
-        </div>
+        </button>
 
       </section>  
 
@@ -311,8 +286,9 @@
         <section class="prices">
           <div class="prices__container">
             <h2 class="prices__header">Service Prices</h2>
-        
-            <table class="prices__table">
+
+            <div class="prices__table">
+            <table>
               <thead class="prices__head">
                 <tr>
                   <th class="prices__th">Repair Service</th>
@@ -328,7 +304,12 @@
                   <td class="prices__cell prices__cell--price">Free</td>
                   <td class="prices__cell prices__cell--time">30 min</td>
                   <td class="prices__cell prices__cell--action">
-                    <img class="prices__go" src="img/order.svg" alt="Order">
+                    <div class="prices__button">
+                      <button class="prices__go"> 
+                        Order
+                        <img class="prices__go--img" src="img/order-go.svg" alt="Order">
+                      </button>
+                      </div>
                   </td>
                 </tr>
         
@@ -337,7 +318,12 @@
                   <td class="prices__cell prices__cell--price">1,000 ₽</td>
                   <td class="prices__cell prices__cell--time">30–120 min</td>
                   <td class="prices__cell prices__cell--action">
-                    <img class="prices__go" src="img/order.svg" alt="Order">
+                    <div class="prices__button">
+                      <button class="prices__go"> 
+                        Order
+                        <img class="prices__go--img" src="img/order-go.svg" alt="Order">
+                      </button>
+                      </div>
                   </td>
                 </tr>
         
@@ -346,7 +332,12 @@
                   <td class="prices__cell prices__cell--price">1,000 ₽</td>
                   <td class="prices__cell prices__cell--time">30–120 min</td>
                   <td class="prices__cell prices__cell--action">
-                    <img class="prices__go" src="img/order.svg" alt="Order">
+                    <div class="prices__button">
+                      <button class="prices__go"> 
+                        Order
+                        <img class="prices__go--img" src="img/order-go.svg" alt="Order">
+                      </button>
+                      </div>
                   </td>
                 </tr>
         
@@ -355,7 +346,12 @@
                   <td class="prices__cell prices__cell--price">1,000 ₽</td>
                   <td class="prices__cell prices__cell--time">30–120 min</td>
                   <td class="prices__cell prices__cell--action">
-                    <img class="prices__go" src="img/order.svg" alt="Order">
+                    <div class="prices__button">
+                      <button class="prices__go"> 
+                        Order
+                        <img class="prices__go--img" src="img/order-go.svg" alt="Order">
+                      </button>
+                      </div>
                   </td>
                 </tr>
         
@@ -364,26 +360,32 @@
                   <td class="prices__cell prices__cell--price">1,000 ₽</td>
                   <td class="prices__cell prices__cell--time">30–120 min</td>
                   <td class="prices__cell prices__cell--action">
-                    <img class="prices__go" src="img/order.svg" alt="Order">
+                    <div class="prices__button">
+                    <button class="prices__go"> 
+                      Order
+                      <img class="prices__go--img" src="img/order-go.svg" alt="Order">
+                    </button>
+                    </div>
                   </td>
                 </tr>
               </tbody>
             </table>
+            </div>
+            <p class="prices__note">
+              All prices include VAT. The repair cost is listed per single service.
+              For a commercial offer for ongoing maintenance, please submit a request.
+            </p>
+            <p class="prices__offer">Get a Commercial Offer
+              <img class="more" src="img/more.svg" alt="More">
           </div>
         </section>
         
         <!--End Service Prices-->
 
         <footer class="footer">
-          <p class="footer__note">
-            All prices include VAT. The repair cost is listed per single service.
-            For a commercial offer for ongoing maintenance, please submit a request.
-          </p>
-          <p class="link--offer">Get a Commercial Offer
-            <img class="more" src="img/more.png" alt="More">
-          </p>
-          <small>© 2019 CPS &middot; Developed by Apesong</small><br/>
-          <small>Information on this page is not a public offer.</small>
+          <small class="footer__item">© 2019 CPS &middot; Developed by Apesong</small><br/>
+          <small class="footer__item">Privacy Policy</small>
+          <small class="footer__item">Information on this page is not a public offer.</small>
         </footer>
 
 

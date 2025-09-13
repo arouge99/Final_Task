@@ -1,3 +1,28 @@
 .footer__note {
     width: 45%;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between; // verteilt die Blöcke mit Abstand
+    align-items: center;            // vertikal mittig
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}  
+
+.footer__item {
+    flex: 1;                      // jeder Block gleich breit
+    text-align: center;           // Text zentrieren
+    padding: 0 10px;              // etwas Innenabstand
+    }
+  
+.footer__item:first-child {
+    text-align: left;             // linksbündig
+    }
+  
+    .footer__item:last-child {
+      text-align: right;            // rechtsbündig
+    }
+  

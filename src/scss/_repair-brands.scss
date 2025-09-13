@@ -19,11 +19,8 @@ header h2 {
 }
 
 .services {
-  background: #f6f6f6c1;
-  border-radius: 10px;
   width: auto;
   height: auto;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .brand-grid {
@@ -32,22 +29,6 @@ header h2 {
     gap: 16px; /* Abstand zwischen den Boxen */
     margin-left: 30px;
   }  
-
-  .repair_brands {
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.2px;
-    line-height: 24px;
-    text-transform: uppercase;
-    align-content: center;
-    padding-left: 23px;
-    color: #7e7e82;
-    height: 56px;
-    background: linear-gradient(to right, #f8f8f8,white);
-    margin-bottom: 25px;
-    border-top: 1px solid #41f6d7;
-  }
 
 .brand-card {
   background-color: #fff;
@@ -173,6 +154,23 @@ header h2 {
 
 
 
+
+.repair_brands__header {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  align-content: center;
+  padding-left: 23px;
+  color: #7e7e82;
+  height: 56px;
+  background: linear-gradient(to right, #f8f8f8,white);
+  margin-bottom: 25px;
+  border-top: 1px solid #41f6d7;
+}
+
+
 .repair_equipment__header {
   font-size: 16px;
   font-weight: 400;
@@ -208,7 +206,7 @@ header h2 {
   height: 160px;
 }
 
-.repair_equipment__hide-text {
+.show_more {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -218,4 +216,5 @@ header h2 {
   cursor: pointer;
   margin-bottom: 10px;
   margin-left: 30px;
+  border: none;
   }
