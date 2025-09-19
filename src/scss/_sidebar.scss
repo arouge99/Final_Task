@@ -5,7 +5,6 @@
   
   body {
     margin: 0;
-    font-family: Roboto, sans-serif;
     background: #f2f2f2;
   }
   
@@ -50,15 +49,6 @@
     height: 40px;
   }
   
-  .sidebar__section-title {
-    position: relative;
-    color: #9E9E9E;
-    margin-bottom: 12px;
-    padding-left: 12px;
-    font-weight: normal;
-    font-size: 18px;
-  }
-  
   .sidebar__section-title::before {
     content: '';
     position: absolute;
@@ -90,13 +80,7 @@
     padding: 0;
     margin: 0;
   }
-  
-  .sidebar__nav li {
-    margin-bottom: 32px;
-    font-weight: bold;
-    cursor: pointer;
-    padding-left: 24px;
-  }
+
   
   /* Contact block */
   .sidebar__contact {
@@ -141,7 +125,6 @@
   .sidebar__nav li {
     position: relative;
     margin-bottom: 32px;
-    font-weight: bold;
     cursor: pointer;
     padding-left: 24px;
     transition: color 0.3s ease;

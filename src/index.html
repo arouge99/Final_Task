@@ -15,20 +15,20 @@
 
     <div class="sidebar">
         <div class="sidebar__top">
-          <img src="img/cancel.svg" class="sidebar__icon__top" alt="Cancel">
+          <img src="img/cancel.svg" class="sidebar__icon__top-cancel" alt="Cancel">
           <img src="img/logo.svg" class="sidebar__logo" alt="CPS Logo">
-          <img src="img/search.svg" class="sidebar__icon__top" alt="Search">
+          <img src="img/search.svg" class="sidebar__icon__top-search" alt="Search">
         </div>
 
         <nav class="sidebar__nav">
           <ul>
-            <li class="sidebar__section-title">Equipment Repair</li>
-            <li>Services</li>
-            <li>For Corporate Clients</li>
-            <li>For Equipment Sellers</li>
-            <li>For Partners</li>
-            <li>For Manufacturers</li>
-            <li>Our Service Centers</li>
+            <li>Equipment Repair</li>
+            <li class="sidebar__section-title">Services an support</li>
+            <li>Corporate clients</li>
+            <li>Equipment sellers</li>
+            <li>Partners</li>
+            <li>Manufacturers</li>
+            <li>Our service Centers</li>
             <li>Contacts</li>
           </ul>
         </nav>
@@ -58,24 +58,34 @@
 
 
     
-      <header class="header__right--desktop-only">
+      <header class="main__header">
         <p>Submit a Request</p>
-        <img class="repair__icon" src="img/repair.svg" alt="Repair">
+        <img class="main__header--repair" src="img/repair.svg" alt="Repair">
         <p>Repair Status</p>
-        <img class="status__icon" src="img/checkstatus.svg" alt="Status">
+        <img class="main__header--status" src="img/checkstatus.svg" alt="Status">
       </header>
     
       <main class="main">
         <section class="services">
-          <h2 class="services__title">Services</h2>
+
+          <h2 class="services__title">
+            Services
+
+            <div class="main__header--desktop">
+              <p>Submit a Request</p>
+              <img class="main__header--desktop-repair" src="img/repair.svg" alt="Repair">
+              <p>Repair Status</p>
+              <img class="main__header--desktop-status" src="img/checkstatus.svg" alt="Status">
+            </div>
+
+          </h2>
     
           <div class="services__tabs">
           
             <button class="services__tab services__tab--active services__tab--desktop">Brands We Repair</button>
-            <button class="services__tab">Repairable Devices</button>
             <button class="services__tab">Additional Services</button>
             <button class="services__tab">Service Prices</button>
-            <button class="services__tab">Service Center Locations</button>
+            <button class="services__tab">Service center adresses</button>
             <button class="services__tab">Special Prices</button>
             <button class="services__tab">Review</button>
           </div>
@@ -83,16 +93,15 @@
           <div class="services__content">
            <div class="services__text">
             <p class="services__description">
-              We are an authorized service center for Dell equipment repair. Only with us can you repair your Dell laptop with the official manufacturer's warranty.
-            </p>
-            <p class="services__description hide-on-mobile">
-              We have been operating successfully since 1992 and have earned a reputation as a reliable partner.
-              <span class="show-on-desktop">We take pride in the fact that people come to us based on recommendations and, in turn, recommend us to their family and friends.</span>
+              <span class="services__description__part1">We are an authorized service center for Dell equipment repair. Only with us can you repair your Dell laptop with the official manufacturer's warranty.</span>
+              <br>
+              <br>
+              <span class="services__description__part2">We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by a large number of regular clients. We take pride in being recommended and in turn, being advised to family and friends.</span>
             </p>  
-            <a href="#" class="services__link">
-              <img class="services__arrow" src="img/expand.svg" alt="expand">
-              Read More
-            </a>
+            <button class="show_more">
+              <img src="img/expand.svg" class="arrow-icon" alt="Toggle-icon"> 
+              <span>Read more</span>
+            </button>
            </div> 
     
            <div class="services__image">
@@ -110,73 +119,7 @@
       <section class="services">
         <div class="repair_brands">
           <h2 class="repair_brands__header">Repair of equipment from various brands</h2>
-        </div>
-    
-    
-        <!-- MOBILE SWIPER (nur sichtbar auf Mobile) -->
-    <div class="swiper brand-swiper hide-on-tablet hide-on-desktop">
-      <div class="swiper-wrapper">
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Lenovo.png" alt="Lenovo">
-          <img class="go-button" src="img/go-button.svg" alt="Go"> 
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Samsung.png" alt="Samsung">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Apple.png" alt="Apple">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/ViewSonic.png" alt="ViewSonic">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Bosch.png" alt="Bosch">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/hp.png" alt="hp">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/acer.png" alt="acer">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Sony.png" alt="Sony">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Lenovo.png" alt="Lenovo 2">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Samsung.png" alt="Samsung 2">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-        <div class="swiper-slide brand-card">
-          <img class="logo" src="img/Apple.png" alt="Apple 2">
-          <img class="go-button" src="img/go-button.svg" alt="Go">
-        </div>
-    
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    
-    
+        </div> 
     
         <div class="brand-grid">
           <div class="brand-card">
@@ -209,27 +152,27 @@
               <img class="go-button" src="img/go-button.svg" alt="Go">
           </div>
     
-          <div class="brand-card hide-on-tablet hidden">
+          <div class="brand-card">
               <img class="logo" src="img/acer.png" alt="acer">
               <img class="go-button" src="img/go-button.svg" alt="Go">
           </div>
     
-          <div class="brand-card hide-on-tablet hidden">
+          <div class="brand-card">
               <img class="logo" src="img/Sony.png" alt="Sony">
               <img class="go-button" src="img/go-button.svg" alt="Go">
           </div>
     
-          <div class="brand-card hide-on-tablet hide-on-desktop hidden">
+          <div class="brand-card">
               <img class="logo" src="img/Lenovo.png" alt="Lenovo">
               <img class="go-button" src="img/go-button.svg" alt="Go">
           </div>
     
-          <div class="brand-card hide-on-tablet hide-on-desktop hidden">
+          <div class="brand-card">
               <img class="logo" src="img/Samsung.png" alt="Samsung">
               <img class="go-button" src="img/go-button.svg" alt="Go">
           </div>
     
-          <div class="brand-card hide-on-tablet hide-on-desktop hidden">
+          <div class="brand-card">
               <img class="logo" src="img/Apple.png" alt="Apple">
               <img class="go-button" src="img/go-button.svg" alt="Go">
           </div>
@@ -238,7 +181,7 @@
     
         <button class="show_more">
           <img src="img/expand.svg" class="arrow-icon" alt="Toggle-icon"> 
-          <span>Show More</span>
+          <span>Show more</span>
         </button>
       </section>
 
@@ -274,7 +217,7 @@
 
         <button class="show_more">
           <img class="arrow-icon" src="img/expand.svg" alt="Toggle-icon">
-          <span>Show More</span>
+          <span>Show more</span>
         </button>
 
       </section>  

@@ -6,10 +6,11 @@ footer {
     display: flex;
     justify-content: space-between; // verteilt die Blöcke mit Abstand
     align-items: center;            // vertikal mittig
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
     font-size: 14px;
     color: #666;
+    border-top: 1px solid #41f6d7;
 }  
 
 .footer__item {

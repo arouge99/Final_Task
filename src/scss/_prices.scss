@@ -22,6 +22,12 @@
 
 table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+tbody {
+    border-bottom: 3px;
+    border-color: #eaeaea;
 }
 
 .prices__table {
