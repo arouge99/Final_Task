@@ -25,9 +25,25 @@ table {
     border-collapse: collapse;
 }
 
+th {
+    font-weight: 400;
+    color: #7E7E82;
+}
+
+.prices__table thead th,
+.prices__table tbody td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
 tbody {
     border-bottom: 3px;
     border-color: #eaeaea;
+}
+
+.prices__cell:first-child {
+    border-top-left-radius: 15px;
 }
 
 .prices__table {
@@ -48,10 +64,17 @@ tbody {
     border-radius: 30px;
     width: 119px;
     height: 32px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    align-items: center;      /* vertikal mittig */
+    justify-content: center;  /* Text erst mal mittig */
+    position: relative;    
 }
 
 .prices__go--img {
-    padding-left: 10px;
+    position: relative;
+    right: -15px;
 }
 
 .prices__note {
