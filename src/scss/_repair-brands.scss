@@ -27,7 +27,7 @@ header h2 {
     grid-template-columns: repeat(4, 1fr); /* 4 gleich breite Spalten */
     gap: 16px; /* Abstand zwischen den Boxen */
     margin-left: 30px;
-  }  
+}  
 
 .brand-card {
   background-color: #fff;
@@ -56,9 +56,6 @@ header h2 {
   transform: rotate(0deg);
 }
 
-.hide-on-mobile {
-  display: none;
-}
 
 .repair_brands__header {
   font-size: 16px;
@@ -104,11 +101,21 @@ header h2 {
   border-radius: 5px;
   padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 5px rgba(0,0,0,0.03);
   width: 240px;
   height: 160px;
+}
+
+.repair_equipment__grid-card p {
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+.repair_equipment__grid-card img {
+  align-self: flex-end;
 }
 
 .show_more {

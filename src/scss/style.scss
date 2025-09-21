@@ -5,6 +5,7 @@
 @use 'footer';
 @use 'services';
 @use 'desktop-layout';
+@use 'tablet-layoutt';
 
 @font-face {
   font-family: 'TT Lakes';
@@ -39,4 +40,8 @@ button {
   background: none;
   font-family: 'TT Lakes';
   font-weight: 400;
+}
+
+.layout {
+  min-width: 1120px;
 }
