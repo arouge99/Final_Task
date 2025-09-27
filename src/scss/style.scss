@@ -6,6 +6,7 @@
 @use 'services';
 @use 'desktop-layout';
 @use 'tablet-layoutt';
+@use 'mobile-layout';
 
 @font-face {
   font-family: 'TT Lakes';
@@ -40,8 +41,4 @@ button {
   background: none;
   font-family: 'TT Lakes';
   font-weight: 400;
-}
-
-.layout {
-  min-width: 1120px;
 }

@@ -3,7 +3,38 @@
         display: none;
     }
 
+    .layout {
+        min-width: 1120px;
+    }
+
     .main__header {
         display: none;
     }
+
+    .header {
+        display: none;
+    }
+
+    .brands-swiper {
+        display: none;
+    }
+
+    .equip-swiper {
+        display: none;
+    }
+
+
+    .menu-toggle { 
+        display: none; 
+    }
+
+
+    .sidebar-overlay { 
+        display: none; 
+    }
+
+    .sidebar-close { 
+        display: none; 
+    }  /* X braucht’s am Desktop nicht */
+      
 }

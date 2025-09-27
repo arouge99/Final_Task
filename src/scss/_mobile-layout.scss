@@ -1,0 +1,210 @@
+
+
+@media (max-width: 767px) {
+    /* 0) Basis */
+    * { 
+        box-sizing: border-box; 
+    }
+   
+  
+    /* 1) Layout darf schrumpfen */
+    .layout {
+      margin: 0;
+      min-width: 0;     /* wichtig */
+      width: 100%;
+      max-width: 100%;
+    }
+  
+
+  
+    /* 3) Header kompakt */
+    .header { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        width: 100%; 
+    }
+
+    .header__divider--left { 
+        display: none; 
+    }
+
+    .profile__right--call,
+    .profile__right--chat,
+    .profile__right--icon { 
+        display: none; 
+    }
+  
+    /* 4) Tabs: horizontal scrollen, aber nur der Tabs-Container */
+    .services__tabs {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 12px;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x proximity;
+      padding: 0 15px 1rem;
+    }
+    .services__tabs > * {
+      flex: 0 0 auto;       /* nicht schrumpfen */
+      scroll-snap-align: start;
+    }
+  
+    /* 5) Längere Texte einkürzen (falls gewollt) */
+    .services__description__part2,
+    .services__description__part3 { 
+        display: none; 
+    }
+
+
+.prices__note {
+    width: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.services__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__header--desktop {
+    display: none;
+}
+
+.brand-grid {
+    display: none;
+}
+
+.brands-swiper {
+    display: block;
+}
+
+.brands-swiper .swiper-slide {
+    width: 220px;
+}
+
+.brand-card .logo { 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.swiper-wrapper {
+    margin-left: 30px;
+    gap: 35px;
+    border-radius: 10px;
+}
+
+.repair_equipment__grid {
+    display: none;
+}
+
+.equip-swiper { 
+    display: block; 
+    padding: 0 16px; 
+}
+
+.equip-swiper .swiper-slide { 
+    width: 240px; 
+}
+
+.repair_equipment__grid-card { 
+    max-width: 100%; 
+}
+
+.repair_equipment__grid-card img { 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.brands-swiper .swiper-pagination,
+.equip-swiper  .swiper-pagination {
+  position: static;     
+  margin-top: 12px;      
+  text-align: center;
+}
+
+
+
+
+
+    /* Menü-Button (Burger) */
+    .menu-toggle {
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      width: 40px; height: 40px;
+      border: 0; border-radius: 50%;
+      background: #ff2c75; color: #fff;
+      padding: 0; cursor: pointer;
+    }
+  
+    /* Sidebar: off-canvas links, mit Slide-from-left */
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;     /* top:0; left:0; bottom:0 */
+      width: 320px;          /* deine Breite */
+      max-width: 90vw;       /* falls sehr schmale Phones */
+      background: #fff;
+      transform: translateX(-100%);
+      transition: transform .28s ease;  /* simple slide animation */
+      z-index: 1000;
+      overflow: hidden;      /* kein eigener Scroll (wie gewünscht) */
+      will-change: transform;
+      box-shadow: 0 20px 40px rgba(0,0,0,.25);
+    }
+    .sidebar.is-open { transform: translateX(0); }
+  
+    /* X-Button in der Sidebar, oben links */
+    .sidebar-close {
+      position: absolute;
+      top: 12px; left: 12px;
+      width: 32px; height: 32px;
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      background: none; border: 0; padding: 8px; cursor: pointer;
+    }
+    
+    .sidebar-close {
+        padding: 17px;
+        position: absolute;
+        top: 12px; 
+        left: 12px; 
+        height: 40px;
+        display: inline-flex;
+        align-items: center; 
+        justify-content: center;
+        background: none; 
+        border: 0; 
+        padding: 8px; 
+        cursor: pointer;
+    }    
+  
+    /* abgedunkelter Hintergrund beim Öffnen */
+    .sidebar-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.35);
+      opacity: 0; pointer-events: none;
+      transition: opacity .2s ease;
+      z-index: 900;
+    }
+    .sidebar-overlay.is-visible {
+      opacity: 1; pointer-events: auto;
+    }
+  
+    /* Seite im Hintergrund nicht scrollen, wenn offen */
+    body.sidebar-open { overflow: hidden; }
+
+    /* Alias: funktioniert egal ob .active ODER .sidebar-active gesetzt wird */
+    .sidebar.active,
+    .sidebar.sidebar-active {
+        left: 0 !important;
+        transform: translateX(0) !important;
+        z-index: 1001;
+    }
+}

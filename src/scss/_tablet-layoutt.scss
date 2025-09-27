@@ -1,6 +1,7 @@
 @media (min-width:768px) and (max-width:1119px) {
 
-    .sidebar {
+
+    .brands-swiper {
         display: none;
     }
 
@@ -73,5 +74,89 @@
         flex: 0 0 auto;                /* keine Verkleinerung */
         scroll-snap-align: start;      /* optional */
     }
+
+    .equip-swiper {
+        display: none;
+    }
+
+
+
+
+
+
+   
+        /* Menü-Button (Burger) */
+        .menu-toggle {
+          display: inline-flex;
+          align-items: center; justify-content: center;
+          width: 40px; height: 40px;
+          border: 0; border-radius: 50%;
+          background: #ff2c75; color: #fff;
+          padding: 0; cursor: pointer;
+        }
+      
+        /* Sidebar: off-canvas links, mit Slide-from-left */
+        .sidebar {
+          position: fixed;
+          inset: 0 auto 0 0;     /* top:0; left:0; bottom:0 */
+          width: 320px;          /* deine Breite */
+          max-width: 90vw;       /* falls sehr schmale Phones */
+          background: #fff;
+          transform: translateX(-100%);
+          transition: transform .28s ease;  /* simple slide animation */
+          z-index: 1000;
+          overflow: hidden;      /* kein eigener Scroll (wie gewünscht) */
+          will-change: transform;
+          box-shadow: 0 20px 40px rgba(0,0,0,.25);
+        }
+        .sidebar.is-open { 
+            transform: translateX(0); 
+        }
+      
+        /* X-Button in der Sidebar, oben links */
+        .sidebar-close {
+          position: absolute;
+          top: 12px; 
+          left: 12px; 
+          height: 40px;
+          display: inline-flex;
+          align-items: center; 
+          justify-content: center;
+          background: none; 
+          border: 0; 
+          padding: 8px; 
+          cursor: pointer;
+        }
+        .sidebar-close img { 
+            max-width: 100%; 
+            height: auto; 
+        }
+      
+        /* abgedunkelter Hintergrund beim Öffnen */
+        .sidebar-overlay {
+          position: fixed; inset: 0;
+          background: rgba(0,0,0,.35);
+          opacity: 0; pointer-events: none;
+          transition: opacity .2s ease;
+          z-index: 900;
+        }
+        .sidebar-overlay.is-visible {
+          opacity: 1; pointer-events: auto;
+        }
+      
+        /* Seite im Hintergrund nicht scrollen, wenn offen */
+        body.sidebar-open { overflow: hidden; }
+
+        /* Alias: funktioniert egal ob .active ODER .sidebar-active gesetzt wird */
+        .sidebar.active,
+        .sidebar.sidebar-active {
+            left: 0 !important;
+            transform: translateX(0) !important;
+            z-index: 1001;
+        }
+
+
+    
+      
 }
     

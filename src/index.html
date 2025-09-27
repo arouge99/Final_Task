@@ -8,14 +8,19 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
 
     <!--Sidebar-->
 
-    <div class="sidebar">
+    <aside class="sidebar" id="sidebar" data-sidebar>
+      <button class="sidebar-close" aria-label="Close menu" type="button">
+        <img src="img/cancel.svg" class="sidebar__icon__top-cancel" alt="Cancel">
+      </button>
+
+    <div class="sidebar__content">
         <div class="sidebar__top">
-          <img src="img/cancel.svg" class="sidebar__icon__top-cancel" alt="Cancel">
           <img src="img/logo.svg" class="sidebar__logo" alt="CPS Logo">
           <img src="img/search.svg" class="sidebar__icon__top-search" alt="Search">
         </div>
@@ -49,6 +54,12 @@
         </div>
     </div>
 
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    
+
     <!--End Sidebar-->
 
 
@@ -60,7 +71,9 @@
     
       <header class="header">
         <div class="header__left">
+          <button class="menu-toggle" aria-controls="sidebar" aria-expanded="false" type="button">
             <img class="menu__icon" src="img/burger.svg" alt="Menu">
+          </button>
         </div>
     
         <div class="header__divider--left"></div>
@@ -197,6 +210,81 @@
           </div>
     
         </div>
+
+        <!-- Mobile-Swiper-Variante -->
+<div class="brands-swiper swiper mySwiperBrands">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Lenovo.png" alt="Lenovo">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Samsung.png" alt="Samsung">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Apple.png" alt="Apple">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/ViewSonic.png" alt="ViewSonic">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Bosch.png" alt="Bosch">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/hp.png" alt="hp">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/acer.png" alt="acer">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Sony.png" alt="Sony">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Lenovo.png" alt="Lenovo">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Samsung.png" alt="Samsung">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="brand-card">
+        <img class="logo" src="img/Apple.png" alt="Apple">
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination Punkte -->
+  <div class="swiper-pagination brands-pagination"></div>
+</div>
     
         <button class="show_more">
           <img src="img/expand.svg" class="arrow-icon" alt="Toggle-icon"> 
@@ -233,6 +321,39 @@
         </div>
 
       </div>
+
+      <!-- Mobile: Swiper-Variante -->
+<div class="equip-swiper swiper mySwiperEquip">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="repair_equipment__grid-card">
+        <p>Laptop Repair</p>
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="repair_equipment__grid-card">
+        <p>Tablet Repair</p>
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="repair_equipment__grid-card">
+        <p>PC Repair</p>
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="repair_equipment__grid-card">
+        <p>Monitor Repair</p>
+        <img class="go-button" src="img/go-button.svg" alt="Go">
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination-Punkte -->
+  <div class="swiper-pagination equip-pagination"></div>
+</div>
 
         <button class="show_more">
           <img class="arrow-icon" src="img/expand.svg" alt="Toggle-icon">
@@ -346,11 +467,15 @@
 
         <footer class="footer">
           <small class="footer__item">© 2019 CPS &middot; Developed by Apesong</small><br/>
-          <small class="footer__item">Privacy Policy</small>
+          <small class="footer__item">Privacy Policy</small><br>
           <small class="footer__item">Information on this page is not a public offer.</small>
         </footer>
 
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
   </body>
 </html>
